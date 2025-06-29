@@ -8,5 +8,5 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/proyecto-1.jar proyecto.jar
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["java", "-jar", "proyecto.jar"]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Vitios</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    </head>
+    <body>
+        <section th:fragment="videos">
+            <main class="container mt-5">
+                <h1 class="mb-4 text-center text-primary">Galería de Videos</h1>
+
+                <div class="row row-cols-1 g-4">
+
+                    <div class="col">
+                        <a class="text-decoration-none text-reset">
+                            <div class="card h-100 shadow-sm">
+                                <img src="https://media.gq.com.mx/photos/65983a1735c14a77ab8a73a1/16:9/w_2560%2Cc_limit/Kimetsu_no_Yaiba_anime.jpg" class="card-img-top" alt="Miniatura Video" style="aspect-ratio: 16/9; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title d-flex justify-content-between align-items-center">
+                                            Título del Video 1
+                                            <span>
+                                                <i class="fa fa-heart mx-1 text-secondary" onclick="this.classList.toggle('text-danger'); this.classList.toggle('text-secondary')"></i>
+                                                <i class="fa fa-heart-broken mx-1 text-secondary" onclick="this.classList.toggle('text-danger'); this.classList.toggle('text-secondary')"></i>
+                                            </span>
+                                        </h5>
+                                        <p class="card-text">Descripción breve del video. Aquí podrías incluir detalles o contexto.</p>
+                                        <p class="text-muted">Subtítulos: Español, Inglés</p>
+                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="text-decoration-none text-reset">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">comentario1</h5>
+                                    <p class="card-text">Texto de referencia para saber donde iran los comentarios</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="text-decoration-none text-reset">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">comentario2</h5>
+                                    <p class="card-text">Texto de referencia para saber donde iran los comentarios</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="text-decoration-none text-reset">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">comentario3</h5>
+                                    <p class="card-text">Texto de referencia para saber donde iran los comentarios</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="text-decoration-none text-reset">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">comentario4</h5>
+                                    <p class="card-text">Texto de referencia para saber donde iran los comentarios</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </body>
+</html>

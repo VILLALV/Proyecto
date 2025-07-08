@@ -2,14 +2,15 @@
 package com.proyecto.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @Controller
-public class UsuarioController {
+public class VistaVideoController {
     
-    @RequestMapping("/usuario")
-    public String videos() {
-        return "usuario/listado"; 
+    @RequestMapping("/vistavideo")
+    public String vistavideo() {
+        return "vistavideo/listado"; 
     } 
+    
 }
